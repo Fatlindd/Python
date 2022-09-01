@@ -1,1 +1,1 @@
-In this folder, all the folders and files inside them will be created after executing the code in test.py.
+In this folder, all the folders and files inside them will be created after executing the code in move_files.py.
