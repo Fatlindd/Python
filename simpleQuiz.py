@@ -18,5 +18,15 @@ if play.lower() == 'n':
 else:   
     correct = 0
     incorrect = 0
+    for question in questions:
+        answer = input('>| ')
+        if answer.lower() == questions[question]:
+            correct += 1
+        else:
+            incorrect += 1
+
+print('Your result: ')
+print('Correct answer: ', correct)
+print('Incorrect answer: ', incorrect)
 
 
