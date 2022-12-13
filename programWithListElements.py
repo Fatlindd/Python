@@ -109,7 +109,10 @@ def clearAndGenerateNewList(listNumber):
         newList.append(int(number))
     return newList 
 
-    
+ # Option 15
+def printList(listNumber):
+    return listNumber
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
