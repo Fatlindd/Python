@@ -158,3 +158,5 @@ chooseOptions = {
 
 print('> List of numbers: ', listNumbers)
 flag = True
+while flag:
+    user_input = input('> Select one option: ')
