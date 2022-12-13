@@ -86,6 +86,10 @@ def checkNumbersList(listNumber):
         return 'Number {} is not in the list.'.format(check)
     return 'Number {} is in the list in position {} with index.'.format(check, listNumber.index(check))
 
+# Option 12
+def lengthOfList(listNumber):
+    return len(listNumber)
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
