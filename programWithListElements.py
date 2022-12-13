@@ -155,3 +155,6 @@ chooseOptions = {
                 '14' : clearAndGenerateNewList,
                 '15' : printList
 }
+
+print('> List of numbers: ', listNumbers)
+flag = True
