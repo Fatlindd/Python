@@ -71,13 +71,20 @@ def removeElementFromList(listNumber):
     listNumber.remove(element)
     return 'You have deleted number {} from list.'.format(element)
 
-# 10
+# Option 10
 def addNewElement(listNumber):
     position = int(input('> Position in list: '))
     element = int(input('Your new number: '))
     listNumber.insert(position, element)
 
     return listNumber
+
+# Option 11
+def checkNumbersList(listNumber):
+    check = int(input('> Check number: '))
+    if check not in listNumber:
+        return 'Number {} is not in the list.'.format(check)
+    return 'Number {} is in the list in position {} with index.'.format(check, listNumber.index(check))
 
 print("""
         --------------------------------------------------------------------
