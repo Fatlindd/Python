@@ -71,6 +71,14 @@ def removeElementFromList(listNumber):
     listNumber.remove(element)
     return 'You have deleted number {} from list.'.format(element)
 
+# 10
+def addNewElement(listNumber):
+    position = int(input('> Position in list: '))
+    element = int(input('Your new number: '))
+    listNumber.insert(position, element)
+
+    return listNumber
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
