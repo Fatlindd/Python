@@ -163,3 +163,8 @@ while flag:
     if user_input in chooseOptions:
         if len(listNumbers) == 0:
             listNumbers = newList 
+        result = chooseOptions.get(user_input)(listNumbers)
+        print(result)
+
+
+        
