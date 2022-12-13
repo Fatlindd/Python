@@ -1,4 +1,12 @@
 
+
+print("""
+        --------------------------------------------------------------------
+        | Hi! Below you can see a list with some numbers element! And also | 
+        | you can choose one option to play with these numbers!            |
+        --------------------------------------------------------------------  
+        """)
+
 listNumbers = [22, 41, 12, 18, 34, -1, 25, 16, 11]
 print('>| Choose one option: ' + 
         '\n 1. Get largest number' +
