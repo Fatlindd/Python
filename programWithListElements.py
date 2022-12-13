@@ -44,6 +44,13 @@ def sortNumbersList(listNumbers):
     numbers.sort()
     return numbers
 
+# Option 6
+def sortReverseNumbersList(listNumbers):
+    numbers = listNumbers[:]
+    numbers.sort(reverse = True)
+    return numbers
+
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
