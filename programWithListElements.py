@@ -56,6 +56,13 @@ def getEvenAndOddNumbers(listNumber):
     oddNumbers = list(filter(lambda x: x % 2 == 1, listNumber))
     return 'Even numbers: {} \nOdd numbers: {}'.format(evenNumbers, oddNumbers)
 
+# Option 8
+def sumOfListNumbers(listNumber):
+    sumOfNumbers = 0
+    for num in listNumber:
+        sumOfNumbers += num
+    
+    return 'Total: {}'.format(sumOfNumbers)
 
 print("""
         --------------------------------------------------------------------
