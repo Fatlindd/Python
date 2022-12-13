@@ -50,6 +50,12 @@ def sortReverseNumbersList(listNumbers):
     numbers.sort(reverse = True)
     return numbers
 
+# Option 7
+def getEvenAndOddNumbers(listNumber):
+    evenNumbers = list(filter(lambda x: x % 2 == 0, listNumber))
+    oddNumbers = list(filter(lambda x: x % 2 == 1, listNumber))
+    return 'Even numbers: {} \nOdd numbers: {}'.format(evenNumbers, oddNumbers)
+
 
 print("""
         --------------------------------------------------------------------
