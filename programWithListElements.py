@@ -6,6 +6,18 @@ def get_largestNumber(number):
             largest = num
     return largest
 
+# Option 2
+def get_second_largest(listNumbers):
+    largest = listNumbers[0]
+    second_largest = listNumbers[0]
+    for num in range(1, len(listNumbers)):
+        if listNumbers[num] > largest:
+            second_largest = largest
+            largest = listNumbers[num]
+        elif listNumbers[num] > second_largest:
+            second_largest = listNumbers[num]
+    return second_largest
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
