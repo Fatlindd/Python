@@ -38,6 +38,12 @@ def get_second_smallest(listNumbers):
             second_smallest = listNumbers[num]
     return second_smallest
 
+# Option 5
+def sortNumbersList(listNumbers):
+    numbers = listNumbers[:]
+    numbers.sort()
+    return numbers
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
