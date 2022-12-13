@@ -165,6 +165,12 @@ while flag:
             listNumbers = newList 
         result = chooseOptions.get(user_input)(listNumbers)
         print(result)
+    else:
+        print('!!! Check number of options !!!')
+    
+    next_option = input('Type any key to continue. If not write \'no\': ')
+    if next_option.lower() == 'no':
+        flag = False
 
 
         
