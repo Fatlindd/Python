@@ -90,6 +90,13 @@ def checkNumbersList(listNumber):
 def lengthOfList(listNumber):
     return len(listNumber)
 
+# Option 13
+def saveListToFile(listNumber):
+    with open('numbers.txt', 'w') as f:
+        for number in listNumber:
+            f.write(str(number) + ' ')
+        return 'Numbers of list are saved in file numbers.txt'
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
