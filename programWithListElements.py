@@ -18,6 +18,14 @@ def get_second_largest(listNumbers):
             second_largest = listNumbers[num]
     return second_largest
 
+# Option 3
+def get_smallest(listNumbers):
+    smallest = listNumbers[0]
+    for num in listNumbers:
+        if num < smallest:
+            smallest = num
+    return smallest
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
