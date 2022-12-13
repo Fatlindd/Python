@@ -1,4 +1,10 @@
-
+# Option 1
+def get_largestNumber(number):
+    largest = 0
+    for num in number:
+        if num > largest:
+            largest = num
+    return largest
 
 print("""
         --------------------------------------------------------------------
@@ -24,3 +30,4 @@ print('>| Choose one option: ' +
         '\n 13. Save the list in a file named numbers.txt' +
         '\n 14. Clear list and generate new one' +
         '\n 15. Print list')
+    
