@@ -160,3 +160,6 @@ print('> List of numbers: ', listNumbers)
 flag = True
 while flag:
     user_input = input('> Select one option: ')
+    if user_input in chooseOptions:
+        if len(listNumbers) == 0:
+            listNumbers = newList 
