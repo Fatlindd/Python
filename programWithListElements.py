@@ -64,6 +64,13 @@ def sumOfListNumbers(listNumber):
     
     return 'Total: {}'.format(sumOfNumbers)
 
+# Option 9
+def removeElementFromList(listNumber):
+    print("Choose one element to delete from list: ", listNumber)
+    element = int(input('>| '))
+    listNumber.remove(element)
+    return 'You have deleted number {} from list.'.format(element)
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
