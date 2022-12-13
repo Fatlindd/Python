@@ -26,6 +26,18 @@ def get_smallest(listNumbers):
             smallest = num
     return smallest
 
+# Option 4
+def get_second_smallest(listNumbers):
+    smallest = listNumbers[0]
+    second_smallest = listNumbers[0]
+    for num in range(1, len(listNumbers)):
+        if listNumbers[num] < smallest:
+            second_smallest = smallest
+            smallest = listNumbers[num]
+        elif listNumbers[num] < second_smallest:
+            second_smallest = listNumbers[num]
+    return second_smallest
+
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
