@@ -137,4 +137,21 @@ print('>| Choose one option: ' +
         '\n 13. Save the list in a file named numbers.txt' +
         '\n 14. Clear list and generate new one' +
         '\n 15. Print list')
-    
+
+chooseOptions = {
+                '1' : get_largestNumber,
+                '2' : get_second_largest,
+                '3' : get_smallest,
+                '4' : get_second_smallest,
+                '5' : sortNumbersList,
+                '6' : sortReverseNumbersList,
+                '7' : getEvenAndOddNumbers,
+                '8' : sumOfListNumbers,
+                '9' : removeElementFromList,
+                '10' : addNewElement,
+                '11' : checkNumbersList,
+                '12' : lengthOfList,
+                '13' : saveListToFile,
+                '14' : clearAndGenerateNewList,
+                '15' : printList
+}
