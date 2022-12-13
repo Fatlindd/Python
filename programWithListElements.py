@@ -97,6 +97,19 @@ def saveListToFile(listNumber):
             f.write(str(number) + ' ')
         return 'Numbers of list are saved in file numbers.txt'
 
+# Option 14
+def clearAndGenerateNewList(listNumber):
+    listNumber.clear()
+    print('Oopps! Your list has been cleared!')
+    countElements = int(input('> How many elements should the new list have? '))
+    global newList 
+    newList = []
+    for numbers in range(countElements):
+        number = input(f'Number {numbers + 1}: ')
+        newList.append(int(number))
+    return newList 
+
+    
 print("""
         --------------------------------------------------------------------
         | Hi! Below you can see a list with some numbers element! And also | 
