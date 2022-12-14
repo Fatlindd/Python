@@ -26,3 +26,8 @@ if result == -1:
     print('Element is not present in array')
 else:
     print('Element is present at index', result)
+    answer = input('> Do you want to check for duplicate:(Y/N) ')
+    if answer.lower() == 'n':
+        quit
+    else:
+        print(checkForDuplicate(arr, x))
