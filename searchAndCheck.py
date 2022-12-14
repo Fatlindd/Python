@@ -10,3 +10,7 @@ x = int(input('> Search number: '))
 N = len(arr)
 
 result = search(arr, N, x)
+if result == -1:
+    print('Element is not present in array')
+else:
+    print('Element is present at index', result)
