@@ -15,6 +15,7 @@ class BankAccount:
         print('4. Withdraw Money')
 
         choice = int(input('Your choice: '))
+
     
     def getBalance(self):
         print(f'Your balance: {self.__balance}€')
@@ -23,3 +24,8 @@ class BankAccount:
             self.list()
         else:
             print('Thank You For Choosing Us!')
+    
+    def clearScreen(self):
+        os = sys.platform
+        if os == 'win32':
+            subprocess.run('cls', shell=True)
