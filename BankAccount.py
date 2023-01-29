@@ -79,6 +79,8 @@ class BankAccount:
             self.clearScreen()
             print('Your password is updated!')
             self.pincode = int(new_pin_code)
+            self.login()
+            
 
     
     def clearScreen(self):
