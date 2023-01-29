@@ -40,6 +40,12 @@ class BankAccount:
         print(f'Bilance: {self.__balance - amount}€')
         print(f'Available: {self.__balance}€')
     
+    def changePassword(self):
+        print('________________________________')
+        print(f'Curren PIN Code: {self.pincode}')
+        new_pin_code = input('New PIN Code')
+        
+    
     def clearScreen(self):
         os = sys.platform
         if os == 'win32':
