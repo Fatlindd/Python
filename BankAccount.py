@@ -12,4 +12,6 @@ class BankAccount:
         print('2. Deposit Money')
         print('3. Change Password')
         print('4. Withdraw Money')
+
+        choice = int(input('Your choice: '))
         
