@@ -53,6 +53,9 @@ class BankAccount:
         elif choice == 3:
             self.clearScreen()
             self.changePassword()
+        elif choice == 4:
+            self.clearScreen()
+            self.withdraw()
 
     def getBalance(self):
         print(f'Your balance: {self.__balance}€')
