@@ -44,7 +44,13 @@ class BankAccount:
         print('________________________________')
         print(f'Curren PIN Code: {self.pincode}')
         new_pin_code = input('New PIN Code')
-        
+        if len(new_pin_code) == 4:
+            print('________________________________')
+            time.sleep(2)
+            self.clearScreen()
+            print('Your password is updated!')
+            self.pincode = int(new_pin_code)
+
     
     def clearScreen(self):
         os = sys.platform
