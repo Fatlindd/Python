@@ -96,6 +96,12 @@ class BankAccount:
         else:
             print('Thank You For Choosing Us!')
     
+    def withdraw(self):
+        amount = int(input('Withdraw money: '))
+        if self.__balance > amount:
+            self.__balance = self.__balance - amount
+            print(f'Your current balance: {self.__balance}€')
+    
     def clearScreen(self):
         os = sys.platform
         if os == 'win32':
