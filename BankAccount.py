@@ -18,6 +18,9 @@ class BankAccount:
         if choice == 1:
             self.clearScreen()
             self.getBalance()
+        elif choice == 2:
+            self.clearScreen()
+            self.deposit()
 
     
     def getBalance(self):
