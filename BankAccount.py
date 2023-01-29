@@ -24,6 +24,18 @@ class BankAccount:
                 else:
                     print('Your PIN Code is wrong! Try Again!')
                     count -= 1
+            else:
+                time.sleep(2)
+                self.clearScreen()
+                print('Your Accoung is blocked!')
+        else:
+            print('Your input is wrong!')
+            while True:
+                self.user_input = input('Enter a card: ')
+                if self.user_input == '1':
+                    self.login()
+                else:
+                    print('Your input is wrong!')
 
     def list(self):
         print('1. Get your Balance')
