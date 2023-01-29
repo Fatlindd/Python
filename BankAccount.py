@@ -15,6 +15,9 @@ class BankAccount:
         print('4. Withdraw Money')
 
         choice = int(input('Your choice: '))
+        if choice == 1:
+            self.clearScreen()
+            self.getBalance()
 
     
     def getBalance(self):
