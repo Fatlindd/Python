@@ -104,6 +104,13 @@ class BankAccount:
         else:
             print(f'In your current balance you have: {self.__balance}€')
             print('No more money for you!')
+        
+        option = input('Back to menu?(Y/N): ')
+        if option.lower() != 'n':
+            self.clearScreen()
+            self.list()
+        else:
+            print('Thank You For Choosing Us!')
     
     def clearScreen(self):
         os = sys.platform
