@@ -83,7 +83,7 @@ class BankAccount:
     def changePassword(self):
         print('________________________________')
         print(f'Curren PIN Code: {self.pincode}')
-        new_pin_code = input('New PIN Code')
+        new_pin_code = input('New PIN Code: ')
         if len(new_pin_code) == 4:
             print('________________________________')
             time.sleep(2)
