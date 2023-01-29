@@ -71,6 +71,14 @@ class BankAccount:
         print('________________________________')
         print(f'Bilance: {self.__balance - amount}€')
         print(f'Available: {self.__balance}€')
+
+        print('________________________________')
+        option = input('Back to menu?(Y/N): ')
+        if option.lower() != 'n':
+            self.clearScreen()
+            self.list()
+        else:
+            print('Thank You For Choosing Us!')
     
     def changePassword(self):
         print('________________________________')
