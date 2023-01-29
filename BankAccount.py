@@ -7,4 +7,9 @@ class BankAccount:
         self.__balance = 1000
         self.pincode = PIN
     
-    
+    def list(self):
+        print('1. Get your Balance')
+        print('2. Deposit Money')
+        print('3. Change Password')
+        print('4. Withdraw Money')
+        
