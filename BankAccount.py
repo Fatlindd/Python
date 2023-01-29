@@ -84,10 +84,14 @@ class BankAccount:
             self.clearScreen()
             print('Your PIN Code must be 4 digits!')
             self.changePassword()
-
-            
-
-
+        
+        print('________________________________')
+        option = input('Back to menu?(Y/N): ')
+        if option.lower() != 'n':
+            self.clearScreen()
+            self.list()
+        else:
+            print('Thank You For Choosing Us!')
     
     def clearScreen(self):
         os = sys.platform
