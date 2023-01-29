@@ -116,3 +116,6 @@ class BankAccount:
         os = sys.platform
         if os == 'win32':
             subprocess.run('cls', shell=True)
+
+my_account = BankAccount(1234)
+my_account.login()
