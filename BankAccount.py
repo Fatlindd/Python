@@ -10,6 +10,7 @@ class BankAccount:
         self.__balance = 1000
         self.pincode = PIN
     
+    # Login method, for login when user put his/her card inside ATM
     def login(self):
         if self.user_input == '1':
             print('Loading...', end= '\r')
@@ -39,6 +40,7 @@ class BankAccount:
                 else:
                     print('Your input is wrong!')
 
+    # List method to display users options after his/her PIN Code is correct
     def list(self):
         print('1. Get your Balance')
         print('2. Deposit Money')
@@ -58,7 +60,8 @@ class BankAccount:
         elif choice == 4:
             self.clearScreen()
             self.withdraw()
-
+    
+    # getBalance() method display to user balance 
     def getBalance(self):
         print(f'Your balance: {self.__balance}€')
         option = input('Back to menu?(Y/N): ')
@@ -67,6 +70,7 @@ class BankAccount:
         else:
             print('Thank You For Choosing Us!')
     
+    # deposit() method is created to deposit money in ATM
     def deposit(self):
         amount = int(input('Deposit money: '))
         self.__balance += amount
@@ -82,6 +86,7 @@ class BankAccount:
         else:
             print('Thank You For Choosing Us!')
     
+    # changePassword is created to change his/her PIN Code every user
     def changePassword(self):
         print('________________________________')
         print(f'Curren PIN Code: {self.pincode}')
@@ -106,6 +111,7 @@ class BankAccount:
         else:
             print('Thank You For Choosing Us!')
     
+    # withdraw() method is created to withdraw money from ATM 
     def withdraw(self):
         amount = int(input('Withdraw money: '))
         if self.__balance > amount:
@@ -122,6 +128,7 @@ class BankAccount:
         else:
             print('Thank You For Choosing Us!')
     
+    # clearScreen() method is created to clear ('cls') screen of terminala after some processes
     def clearScreen(self):
         os = sys.platform
         if os == 'win32':
