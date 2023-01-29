@@ -12,6 +12,18 @@ class BankAccount:
         if self.user_input == '1':
             print('Loading...', end= '\r')
             time.sleep(2)
+            count = 3
+            while count > 0:
+                pin = input('Enter your 4 digits code: ')
+                if pin == str(self.pincode):
+                    print('Loading...', end= '\r')
+                    time.sleep(2)
+                    self.clearScreen()
+                    self.list()
+                    break
+                else:
+                    print('Your PIN Code is wrong! Try Again!')
+                    count -= 1
 
     def list(self):
         print('1. Get your Balance')
