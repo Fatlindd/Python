@@ -22,7 +22,6 @@ class BankAccount:
             self.clearScreen()
             self.deposit()
 
-    
     def getBalance(self):
         print(f'Your balance: {self.__balance}€')
         option = input('Back to menu?(Y/N): ')
@@ -30,6 +29,10 @@ class BankAccount:
             self.list()
         else:
             print('Thank You For Choosing Us!')
+    
+    def deposit(self):
+        amount = int(input('Deposit money: '))
+        self.__balance += amount
     
     def clearScreen(self):
         os = sys.platform
