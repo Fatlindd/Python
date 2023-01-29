@@ -80,7 +80,13 @@ class BankAccount:
             print('Your password is updated!')
             self.pincode = int(new_pin_code)
             self.login()
+        else:
+            self.clearScreen()
+            print('Your PIN Code must be 4 digits!')
+            self.changePassword()
+
             
+
 
     
     def clearScreen(self):
