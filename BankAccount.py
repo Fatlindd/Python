@@ -14,4 +14,12 @@ class BankAccount:
         print('4. Withdraw Money')
 
         choice = int(input('Your choice: '))
-        
+    
+    def getBalance(self):
+        print(f'Your balance: {self.__balance}€')
+        option = input('Back to menu?(Y/N): ')
+        if option.lower() != 'n':
+            self.list()
+        else:
+            print('Thank You For Choosing Us!')
+            
