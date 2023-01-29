@@ -8,6 +8,11 @@ class BankAccount:
         self.__balance = 1000
         self.pincode = PIN
     
+    def login(self):
+        if self.user_input == '1':
+            print('Loading...', end= '\r')
+            time.sleep(2)
+
     def list(self):
         print('1. Get your Balance')
         print('2. Deposit Money')
