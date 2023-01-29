@@ -21,6 +21,9 @@ class BankAccount:
         elif choice == 2:
             self.clearScreen()
             self.deposit()
+        elif choice == 3:
+            self.clearScreen()
+            self.changePassword()
 
     def getBalance(self):
         print(f'Your balance: {self.__balance}€')
