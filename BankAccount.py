@@ -101,6 +101,9 @@ class BankAccount:
         if self.__balance > amount:
             self.__balance = self.__balance - amount
             print(f'Your current balance: {self.__balance}€')
+        else:
+            print(f'In your current balance you have: {self.__balance}€')
+            print('No more money for you!')
     
     def clearScreen(self):
         os = sys.platform
