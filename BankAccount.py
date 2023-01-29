@@ -16,7 +16,7 @@ class BankAccount:
             time.sleep(2)
             count = 3
             while count > 0:
-                pin = input('Enter your 4 digits code: ')
+                pin = maskpass.askpass(prompt = 'Enter your 4 digits code: ', mask ='*')
                 if pin == str(self.pincode):
                     print('Loading...', end= '\r')
                     time.sleep(2)
