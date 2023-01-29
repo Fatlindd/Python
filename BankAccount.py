@@ -33,6 +33,9 @@ class BankAccount:
     def deposit(self):
         amount = int(input('Deposit money: '))
         self.__balance += amount
+        print('________________________________')
+        print(f'Bilance: {self.__balance - amount}€')
+        print(f'Available: {self.__balance}€')
     
     def clearScreen(self):
         os = sys.platform
