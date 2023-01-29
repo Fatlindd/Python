@@ -1,4 +1,5 @@
-
+import time
+import sys, subprocess
 class BankAccount:
     print('!!! To Put Your Card In ATM Press 1 !!!')
     user_input = input('Enter card: ')
@@ -22,4 +23,3 @@ class BankAccount:
             self.list()
         else:
             print('Thank You For Choosing Us!')
-            
