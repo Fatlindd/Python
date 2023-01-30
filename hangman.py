@@ -47,3 +47,4 @@ fifth = """
    |    / \\
   _|_ 
 """
+images = [first, second, third, fourth, fifth]
