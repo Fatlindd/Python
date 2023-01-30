@@ -59,3 +59,4 @@ if __name__ == "__main__":
         word = random.choice(words)
         guess = ["_" for i in range(len(word))]
         guessed_words = []
+        wrong_guesses = 0
