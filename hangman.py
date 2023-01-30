@@ -96,3 +96,6 @@ if __name__ == "__main__":
                         print('You won.')
                         user_input = input("\nPress Enter to play again or type 'exit' to exit the program: ")
                         break
+                else:
+                    print(images[wrong_guesses])
+                    wrong_guesses += 1
