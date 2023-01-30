@@ -51,6 +51,9 @@ fifth = """
 """
 images = [first, second, third, fourth, fifth]
 
+def print_guess():
+    print(' '.join(guess))
+
 if __name__ == "__main__":
     print("Welcome to Hangman game!\nType 'exit' to exit the game.")
     words = ['pristina', 'police', 'python']
@@ -60,3 +63,6 @@ if __name__ == "__main__":
         guess = ["_" for i in range(len(word))]
         guessed_words = []
         wrong_guesses = 0
+        print(f'\nGuess the word with {len(word)} letters!')
+        print('\n')
+        print_guess()
