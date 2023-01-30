@@ -72,4 +72,9 @@ if __name__ == "__main__":
                 break
 
             if user_input.isalpha() and len(user_input) == 1:
-                pass
+                
+                if user_input not in guessed_words:
+                    guessed_words.append(user_input)
+                else:
+                    print('You already guessed this letter.')
+                    continue
