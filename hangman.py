@@ -92,3 +92,7 @@ if __name__ == "__main__":
                 if indecies:
                     fill_guess(indecies, user_input)
                     print(' '.join(guess))
+                    if "_" not in guess:
+                        print('You won.')
+                        user_input = input("\nPress Enter to play again or type 'exit' to exit the program: ")
+                        break
