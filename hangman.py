@@ -48,3 +48,6 @@ fifth = """
   _|_ 
 """
 images = [first, second, third, fourth, fifth]
+
+if __name__ == "__main__":
+    print("Welcome to Hangman game!\nType 'exit' to exit the game.")
