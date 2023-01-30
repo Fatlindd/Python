@@ -58,6 +58,11 @@ def find(word, letter):
     """ Return idecies of letter in word. """
     return [indx for indx in range(len(word)) if word[indx] == letter]
 
+def fill_guess(indecies, user_input):
+    global guess
+    for indx in indecies:
+        guess[indx] == user_input
+
 if __name__ == "__main__":
     print("Welcome to Hangman game!\nType 'exit' to exit the game.")
     words = ['pristina', 'police', 'python']
@@ -84,3 +89,6 @@ if __name__ == "__main__":
                     continue
 
                 indecies = find(word, user_input)
+                if indecies:
+                    fill_guess(indecies, user_input)
+                    print(' '.join(guess))
