@@ -68,4 +68,8 @@ if __name__ == "__main__":
         print_guess()
         while True:
             user_input = input('\nGuess a letter: ')
-            
+            if user_input == 'exit':
+                break
+
+            if user_input.isalpha() and len(user_input) == 1:
+                pass
