@@ -58,4 +58,4 @@ if __name__ == "__main__":
     while user_input != 'exit':
         word = random.choice(words)
         guess = ["_" for i in range(len(word))]
-        
+        guessed_words = []
