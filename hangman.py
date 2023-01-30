@@ -54,6 +54,10 @@ images = [first, second, third, fourth, fifth]
 def print_guess():
     print(' '.join(guess))
 
+def find(word, letter):
+    """ Return idecies of letter in word. """
+    return [indx for indx in range(len(word)) if word[indx] == letter]
+
 if __name__ == "__main__":
     print("Welcome to Hangman game!\nType 'exit' to exit the game.")
     words = ['pristina', 'police', 'python']
@@ -78,3 +82,5 @@ if __name__ == "__main__":
                 else:
                     print('You already guessed this letter.')
                     continue
+
+                indecies = find(word, user_input)
