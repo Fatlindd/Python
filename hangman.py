@@ -103,4 +103,5 @@ if __name__ == "__main__":
                         print('You failed.')
                         user_input = input("\nPress Enter to play again or type 'exit' to exit the program: ")
                         break
-
+            else:
+                print(f'{user_input} is not a valid input.')                
