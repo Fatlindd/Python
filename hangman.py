@@ -66,3 +66,6 @@ if __name__ == "__main__":
         print(f'\nGuess the word with {len(word)} letters!')
         print('\n')
         print_guess()
+        while True:
+            user_input = input('\nGuess a letter: ')
+            
