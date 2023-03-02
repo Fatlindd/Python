@@ -23,4 +23,10 @@ class Hotel:
             print(f"{guest} has checked out of room {room_number}.")
         else:
             print("This room is not occupied.")
-            
+        
+    def display_guests(self):
+        if self.guests:
+            for room_number, guest in self.guests.items():
+                print(f"Room: {room_number}: {guest}")
+        else:
+            print("There are no guests.")
