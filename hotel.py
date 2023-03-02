@@ -1,3 +1,5 @@
+import sys, subprocess
+
 class Hotel:
     def __init__(self, name, rooms, rating):
         self.name = name
@@ -39,3 +41,4 @@ else:
     rooms = input("Number of rooms: ")
     rating = input("Rating: ")
     hotel = Hotel(name, rooms, rating)
+    
