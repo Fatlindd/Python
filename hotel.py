@@ -30,3 +30,12 @@ class Hotel:
                 print(f"Room: {room_number}: {guest}")
         else:
             print("There are no guests.")
+
+createHotel = input("Do you want to create a Hotel? (Y/N): ")
+if createHotel.lower() == 'n':
+    exit()
+else:
+    name = input("Hotel name: ")
+    rooms = input("Number of rooms: ")
+    rating = input("Rating: ")
+    hotel = Hotel(name, rooms, rating)
