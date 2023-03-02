@@ -64,12 +64,10 @@ else:
         print('\n!!! Please use number for option !!!')
     
     if choose == 1:
-        firstname = input('>| Firstname: ')
-        lastname = input('>| Lastname: ')
+        fullname = input('>| Fullname: ')
         print(f"Free rooms: {[room for room in range(1, hotel.rooms + 1)]}")
-        room = int(input('>| '))
-        print(hotel.rooms)
-        hotel.check_in(firstname, lastname)
+        room = int(input('>|Room: '))
+        hotel.check_in(fullname, room)
 
     
 
