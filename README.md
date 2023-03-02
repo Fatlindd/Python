@@ -1,1 +1,3 @@
 # Python Exercises
+
+In this repository, I put python tasks that I practice every day. I publish in this repository only the tasks that are more challenging and interesting, often we learn from a task with 3 or 4 lines of code, which we needed maybe 7-8 lines to complete. Big things are made of a series of small things put together, which we in python will know as modules. A module is a part of a program that contains one or more lines of code. One or more independently developed modules make up a program. As for software, an example of a module is Microsoft Word which used Microsoft Paint to help users create drawings according to their imagination.
