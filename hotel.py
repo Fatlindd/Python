@@ -2,7 +2,7 @@ import sys, subprocess
 
 class Hotel:
     def __init__(self, name, rooms, rating):
-        self.name = name
+        self.name = name    
         self.rooms = rooms
         self.rating = rating
         self.guests = {}
@@ -32,28 +32,28 @@ class Hotel:
                 print(f"Room: {room_number}: {guest}")
         else:
             print("There are no guests.")
-    
+
     def display_option(self):
-        option = {
-            1: 'Choose Hotel', 
-            2: 'Check-in', 
-            3: 'Check-out', 
-            4: 'Display Guests',
-            5: 'Clear Screen',
-            6: 'Exit'}
+        option = { 
+            1: 'Check-in', 
+            2: 'Check-out', 
+            3: 'Display Guests',
+            4: 'Clear Screen',
+            5: 'Exit'}
         
         for key, value in option.items():
             print(key, ':', value)
-
 
 createHotel = input("Do you want to create a Hotel? (Y/N): ")
 if createHotel.lower() == 'n':
     exit()
 else:
     name = input("Hotel name: ")
-    rooms = input("Number of rooms: ")
+    rooms = int(input("Number of rooms: "))
     rating = input("Rating: ")
     hotel = Hotel(name, rooms, rating)
+    
+
 
     print('\n\n')
     
@@ -64,6 +64,12 @@ else:
         print('\n!!! Please use number for option !!!')
     
     if choose == 1:
+        firstname = input('>| Firstname: ')
+        lastname = input('>| Lastname: ')
+        print(f"Free rooms: {[room for room in range(1, hotel.rooms + 1)]}")
+        room = int(input('>| '))
+        print(hotel.rooms)
+        hotel.check_in(firstname, lastname)
 
     
 
