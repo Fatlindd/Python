@@ -32,6 +32,18 @@ class Hotel:
                 print(f"Room: {room_number}: {guest}")
         else:
             print("There are no guests.")
+    
+    def display_option(self):
+        option = {
+            1: 'Choose Hotel', 
+            2: 'Check-in', 
+            3: 'Check-out', 
+            4: 'Display Guests',
+            5: 'Clear Screen',
+            6: 'Exit'}
+        
+        for key, value in option.items():
+            print(key, ':', value)
 
 
 createHotel = input("Do you want to create a Hotel? (Y/N): ")
@@ -44,13 +56,14 @@ else:
     hotel = Hotel(name, rooms, rating)
 
     print('\n\n')
-    option = {
-            1: 'Choose Hotel', 
-            2: 'Check-in', 
-            3: 'Check-out', 
-            4: 'Display Guests',
-            5: 'Clear Screen',
-            6: 'Exit'}
+    
+    hotel.display_option()
+    try:
+        choose = int(input('>| Choose one option: '))
+    except ValueError:
+        print('\n!!! Please use number for option !!!')
+    
+    if choose == 1:
 
     
 
