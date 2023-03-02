@@ -16,3 +16,11 @@ class Hotel:
         else:
             self.guests[room_number] = guest
             print(f"{guest} has checked in to room {room_number}")
+    
+    def check_out(self, room_number):
+        if room_number in self.guests:
+            guest = self.guests.pop(room_number)
+            print(f"{guest} has checked out of room {room_number}.")
+        else:
+            print("This room is not occupied.")
+            
