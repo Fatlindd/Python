@@ -1,6 +1,6 @@
 
-# 🔔 read() - 
-# 🔔 split() - 
+# 🔔 read() - reads the entire content of a file as a single string.
+# 🔔 split() - convert the string into list based on spaces between words in string.
 with open('Files/check_words.txt', 'rt') as file:
     word_list = file.read().split()
     count = 0
