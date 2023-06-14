@@ -1,5 +1,3 @@
-
-
 def upperLineFile(file):
     openFile = open(file, 'rt')
     readFile = openFile.read().strip()
