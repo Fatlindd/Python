@@ -21,3 +21,4 @@ for line in fhand:
         else:
             dict_days[words[2]] += 1
 print(dict_days)
+
