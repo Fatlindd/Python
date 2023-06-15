@@ -1,3 +1,4 @@
+# Program that categorizes each email message by which day of the week the commit was done.
 
 dict_days = dict()
 # fname = 'Files/mbox-short.txt'
