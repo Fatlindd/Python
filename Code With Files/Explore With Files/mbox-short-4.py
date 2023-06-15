@@ -1,3 +1,6 @@
+# Write a program to read through a mail log, build a histogram using a dictionary to 
+# count how many messages have come each email address, and print the dictionary.
+
 dict_email = dict()
 fname = input('> Give file name: ')
 try: 
