@@ -1,4 +1,6 @@
 # TODO 1️⃣: asking the questions
+# TODO 2️⃣: checking if the answer was correct
+# TODO 3️⃣: checking if we're the end of the quiz
 
 class QuizBrain:
 
