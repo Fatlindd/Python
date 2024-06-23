@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Custom
+# Specific files to ignore in the given project
+CommandLine-Interface/contacts.json
+CommandLine-Interface/tasks.txt
+Pandas Library/data.csv
+Pandas Library/grouped_data.csv
+PythonLogging/app.log
+kosovo map/kosovo.gif
+kosovo map/location.gif
+*.xml
+*.iml
